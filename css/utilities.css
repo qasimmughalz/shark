@@ -1,0 +1,86 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Open+Sans:wght@300&display=swap');
+
+
+.heading{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.normal-text{
+  font-family: 'Open Sans', sans-serif;
+}
+
+section{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+.text-success{
+  color: #ffb703 !important;
+}
+
+.bg-dark{
+  background-color: #023047 !important;
+}
+
+.btn-primary{
+  /* border-radius: 0px; */
+  padding: 20px 35px;
+  color: #023047;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  background-color: #fca311;
+  border: 0px;
+  box-shadow: none !important;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+  background-color: #fca311;
+  border: 0px; 
+  box-shadow: none !important;
+}
+
+
+
+
+/* custom-container === container */
+.custom-container{
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1500px;
+}
+
+/* custom-container === container-fluid */
+.custom-container-fluid{
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES FOR CUSTOM CONTAINER */
+@media only screen and (max-width:1200px){
+  .custom-container{
+    width: 92%;
+  }
+}
+@media only screen and (max-width:768px){
+  .custom-container{
+    width: 95%;
+  }
+}
+@media only screen and (max-width:600px){
+  .custom-container{
+    width: 100%;
+  }
+}
