@@ -241,3 +241,117 @@ footer p a{
   }
 
 }
+
+
+/* SLIDER SECTION */
+.slider__wraper{
+  padding: 64px 0;
+}
+.section-slider{
+  width: 95%;
+  margin-left: auto;
+  padding-top: 30px;
+}
+.slider-item-wrap{
+  width: 100%;
+  height: 452px;
+  position: relative;
+  overflow: hidden;
+}
+.slider-item-wrap img{
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.socail-overlay{
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  transform: translateY(60px);
+  transition: all .3s ease;
+}
+.icon-box{
+  width: 40px;
+  height: 40px;
+  background-color: yellow;
+  position: relative;
+  transition: all .1s ease;
+  cursor: pointer;
+}
+.icon-box i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #000;
+  font-size: 20px;
+}
+.icon-box:hover{
+  background-color: #fff;
+}
+.slider-item:hover .socail-overlay{
+  transform: translateY(0px);
+}
+.slider-item-content h3{
+  color: #fff;
+}
+.slider-item-content span{
+  color: #fff;
+}
+.section-slider-wrapper .owl-nav {
+  display: flex;
+  justify-content: end;
+  padding-right: 50px;
+  margin-top: 30px;
+}
+.section-slider-wrapper .owl-nav button{
+  width: 50px;
+  height: 50px;
+  border-radius: 50% !important;
+  background-color: #f4f4f4 !important;
+  border: 1px solid #333 !important;
+  position: relative;
+}
+.section-slider-wrapper .owl-nav button:last-child span{
+  background-image: url(/images/nav-arrow-right-svgrepo-com.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  color:transparent;
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+.section-slider-wrapper .owl-nav button:first-child span{
+  background-image: url(/images/arrow-left-2-svgrepo-com.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  color:transparent;
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width:600px){
+  .slider-item-wrap{
+    height: 350px;
+  }
+}
+@media only screen and (max-width:450px){
+  .icon-box{
+    width: 30px;
+    height: 30px;
+  }
+}
