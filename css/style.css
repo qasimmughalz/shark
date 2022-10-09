@@ -1,4 +1,29 @@
-*{padding: 0;margin: 0;box-sizing: border-box;}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Open+Sans:wght@300&display=swap');
+
+
+
+/* ================ GENRAL ============= */
+
+:root{
+  --blue: #023047;
+  --yellow: #ffb703;
+  --text-family: 'Open Sans', sans-serif;
+  --heading: 'Montserrat', sans-serif;
+}
+
+.heading{
+  font-family: var(--heading)
+}
+.normal-text{
+  font-family: var(--text-family)
+}
+
+*{padding: 0;margin: 0;box-sizing: border-box; }
+body{
+  overflow-x: hidden !important;
+}
+
 a{
   text-decoration: none;
   color: inherit;
@@ -7,8 +32,14 @@ li{
   list-style: none;
 }
 
+
+
+
+/* =================================== PAGE CSS ==================================== */
+
+
 .header{
-  height: 70vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -26,6 +57,9 @@ li{
 .image-box-style img{
   border-radius: 20px;
 }
+
+
+
 
 
 /* =================== NAVBAR =================== */
@@ -53,7 +87,7 @@ li{
   position: absolute;
   display: block;
   bottom: 30%;
-
+  
   border-bottom: 2px solid #000;
 }
 .hamburger{
@@ -144,7 +178,7 @@ li{
     align-items: center;
     background: #023047;
     /* background: linear-gradient(90deg, rgba(8,205,233,1) 0%, rgba(27,129,192,1) 60%); */
-    clip-path: circle(90px at 90% -40px );
+    clip-path: circle(90px at 50% -40px );
     /* -webkit-clip-path:circle(100px at 100% -20px ); */
     transition: 0.3s ease-out;
     overflow: hidden;
@@ -179,27 +213,37 @@ li{
   
 /* ============ OUR SERVICES ============== */
 
-.container{
-  background-color: #000;
+.text-hover-images{
+  padding: 60px 0px;
+  overflow: hidden;
+  text-align: center;
+  background-color: var(--blue);
 }
 
-.container .text{
+.text-hover-images .text h1{
   color:#fff3;
   font-size: 8vw;
   text-transform: capitalize;
-  padding:30px;
+  padding:20px 0px;
   cursor: pointer;
 }
+.text-hover-images .text p{
+  font-size: 16px;
+  color: #fff;
+  font-style: italic;
+  margin-top: -30px;
+  font-family: var(--text-family) 
+}
 
-.container .text:hover{
-  color:#fff;
+.text-hover-images .text h1:hover{
+  color:var(--yellow);
   position: relative;
   z-index: 100;
   text-shadow: 0 5px 10px rgba(0,0,0,.7);
 }
 
-.container .text:hover ~ .hover-img{
-  transform: translate(-50%, -50%) scale(1);
+.text-hover-images .text:hover ~ .hover-img{
+  transform: translate(-50%, -50%) scale(0.6);
   opacity: 1;
 }
 
@@ -261,13 +305,37 @@ footer p a{
   margin: 0;
 }
 
+@media only screen and (max-width: 600px) {
+  .menu-text-size{
+    font-size: 1.4rem;
+  }
+  .big-text{
+    font-size: 2.5rem;
+  }
+  .heading-design{
+    position: absolute;
+    bottom: 10%;
+    left: -5%;
+    height: 200px;
+  }
+  .hamburger{
+    right: 44%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .hamburger{
+    right: 46%;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   
   .margin-out{
     margin-top: -25px;
   }
   .hamburger{
-    right: 8.2%;
+    right: 48.2%;
   }
 
 }
