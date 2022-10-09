@@ -177,10 +177,40 @@ li{
     width: 100%;
   }
   
+/* ============ OUR SERVICES ============== */
 
+.container{
+  background-color: #000;
+}
 
+.container .text{
+  color:#fff3;
+  font-size: 8vw;
+  text-transform: capitalize;
+  padding:30px;
+  cursor: pointer;
+}
 
+.container .text:hover{
+  color:#fff;
+  position: relative;
+  z-index: 100;
+  text-shadow: 0 5px 10px rgba(0,0,0,.7);
+}
 
+.container .text:hover ~ .hover-img{
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+.hover-img{
+  position: absolute;
+  top:0; left:0;
+  transform: translate(-50%, -50%) scale(.5);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 10;
+}
 
 
 
