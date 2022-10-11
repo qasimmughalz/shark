@@ -186,11 +186,17 @@ background: linear-gradient(153deg, rgba(0,0,0,1) 0%, rgba(12,21,64,0) 94%);
   min-height: 200px;
 }
 
-
-
 /* =================== NAVBAR =================== */
+.menu-text-size{
+  font-size: 2rem;
+}
 
-
+  /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .menu-text-size{
+    font-size: 1.4rem;
+  }
+}
 
 /* ============== HAMBURGER ======================= */
 .header-logo{
@@ -310,7 +316,6 @@ background: linear-gradient(153deg, rgba(0,0,0,1) 0%, rgba(12,21,64,0) 94%);
     overflow: hidden;
     z-index: 1000;
   }
-  
    .visible{
     clip-path: circle(2000px at 100% -20px );
     -webkit-clip-path:circle(2000px at 100% -20px );
@@ -320,18 +325,22 @@ background: linear-gradient(153deg, rgba(0,0,0,1) 0%, rgba(12,21,64,0) 94%);
     transition: 0.1s ease-in-out;
   }
   .nav ul li a{
-      text-decoration: none;
-    color: #fddac0;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-family: var(--heading) !important;
     -webkit-text-stroke:0.5px #000;
   
   }
   .nav ul li a:before{
+    font-weight: bold;
+    font-family: var(--heading) !important;
     content: attr(data-text);
     overflow: hidden;   
     position: absolute;
     width: 0%;
-    color: #000;
-    transition: all 1s ;
+    color: var(--yellow);
+    transition: all 0.1s ;
   } 
   .nav ul li a:hover::before{
     width: 100%;
