@@ -30,6 +30,7 @@ li{
   /* --blue: #023047; */
   --blue: rgba(46,50,52,1);
   --yellow: #f24b04;
+  --light-bg:#e9ecef;
   --text-family: 'Inter', sans-serif;
   --heading: 'Inter', sans-serif;
 }
@@ -41,6 +42,9 @@ li{
 }
 .bg-dark{
   background-color: var(--blue) !important;
+}
+.bg-light{
+  background-color: var(--light-bg) !important;
 }
 
 .heading{
@@ -390,6 +394,8 @@ background: linear-gradient(153deg, rgba(0,0,0,1) 0%, rgba(12,21,64,0) 94%);
 }
 
 .hover-img{
+  max-width: 600px;
+  max-height: 400px;
   position: absolute;
   top:0; left:0;
   transform: translate(-50%, -50%) scale(.5);
@@ -399,6 +405,14 @@ background: linear-gradient(153deg, rgba(0,0,0,1) 0%, rgba(12,21,64,0) 94%);
 }
 
 
+
+
+/* ================    Choose Your Path ====================== */
+
+
+.path .tilt-img{
+clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+}
 
 
 
@@ -484,9 +498,9 @@ footer p a{
 
 
 /* SLIDER SECTION */
-.slider__wraper{
+/* .slider__wraper{
   padding: 64px 0;
-}
+} */
 .section-slider{
   width: 95%;
   margin-left: auto;
