@@ -159,6 +159,11 @@ background: linear-gradient(153deg, rgba(0,0,0,1) 0%, rgba(12,21,64,0) 94%);
 
 
 
+.about-us-text{
+  /* text-align: justify; */
+  line-height: 30px;
+}
+
 
 
 /* ======================= VIDEO HEADER ===================== */
@@ -489,13 +494,14 @@ footer p a{
 }
 .slider-item-wrap{
   width: 100%;
-  height: 452px;
+  /* height: 452px; */
   position: relative;
   overflow: hidden;
 }
 .slider-item-wrap img{
   max-width: 100%;
   height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 .socail-overlay{
