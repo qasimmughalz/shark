@@ -527,6 +527,21 @@ footer p a{
   transform: translateY(60px);
   transition: all .3s ease;
 }
+.socail-overlay-box{
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  transform: translateY(-130px);
+  transition: all .3s ease;
+}
+.socail-overlay-box .small-circle{
+    background-color: #fff;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
 .icon-box{
   width: 40px;
   height: 40px;
@@ -546,7 +561,11 @@ footer p a{
 .icon-box:hover{
   background-color: #fff;
 }
+
 .slider-item:hover .socail-overlay{
+  transform: translateY(0px);
+}
+.slider-item:hover .socail-overlay-box{
   transform: translateY(0px);
 }
 .slider-item-content{
