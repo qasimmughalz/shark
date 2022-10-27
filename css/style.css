@@ -28,8 +28,9 @@ li{
 
 :root{
   /* --blue: #023047; */
-  --blue: rgba(46,50,52,1);
-  --yellow: #f24b04;
+  /* --blue: rgba(46,50,52,1); */
+  --blue: #0d1a2f;
+  --yellow: #3ed1bd;
   --light-bg:#e9ecef;
   --text-family: 'Oswald', sans-serif;
   --heading: 'Oswald', sans-serif;
@@ -124,6 +125,14 @@ li{
 
 
 /* =================================== PAGE CSS ==================================== */
+
+
+.header-section{
+  background-image: url('https://mgmtdigital.com/wp-content/uploads/revslider/Homepage/slider-dark-1.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 .video-background{
   position: relative;
@@ -356,6 +365,32 @@ background: linear-gradient(153deg, rgba(0,0,0,1) 0%, rgba(12,21,64,0) 94%);
   .nav ul li a:hover::before{
     width: 100%;
   }
+
+
+/* ================= IMAGE OVERLAY ============== */
+
+.bg-image-overlay{
+    position: relative;
+    background: url('https://mgmtdigital.com/wp-content/uploads/2022/05/AdobeStock_212443255-scaled-1.jpeg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: 2;
+}
+
+.bg-image-overlay::after{
+  content: '';
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: rgb(0,0,0,0.7);
+}
+
   
 /* ============ OUR SERVICES ============== */
 

@@ -18,84 +18,105 @@
 
 
 
-
-  <!-- ========== Navbar =========== -->
-    <header>
-    <div class="hamburger">
-        <div class="line"></div>
+  <header class="header-wrap" id="dynamic">
+    <div class="header-content">
+      <div class="header-logo">
+        <img src="./images/white-new-logo.png" alt="">
+      </div>
+      <div class="menu-toggle" onclick="openNav()">
+        <img src="./images/toogle-menu.svg" alt="">
+      </div>
     </div>
-
-    <nav class="nav">
-        <div class="container">
-            <div class="row align-items-center" >
-                <div class="col-md-7 order-2 order-md-1">
-                  <div class="row justify-content-evenly ">
-                  <div class="col-3 ">
-                    <ul class="p-0">
-                      <li class="menu-text-size style1 mylinks font-weight-bold my-2"><a href="index.html"
-                         data-text="Home" class="active">Home </a></li>
-                      <li class="menu-text-size style1 mylinks font-weight-bold my-2"><a href="clients.html" 
-                        data-text="Clients">Clients</a></li>
-                      <li class="menu-text-size style1 mylinks font-weight-bold my-2"><a href="services.html" 
-                        data-text="Services">Services</a></li>
-                      <li class="menu-text-size style1 mylinks font-weight-bold my-2"><a href="about.html" 
-                        data-text="About">About</a></li>
-                      <li class="menu-text-size style1 mylinks font-weight-bold my-2"><a href="contact.html" data-text="Contact">Contact</a></li>
-                  </ul>
-                  </div>
-                  <div class="col-4 ">
-                    <ul class="p-0">
-                      <li class="menu-text-size style1 mylinks font-weight-bold my-2"><a href="business.html"
-                         data-text="Business" class="active">Business </a></li>
-                      <li class="menu-text-size style1 mylinks font-weight-bold my-2"><a href="loans.html" 
-                        data-text="Loans">Loans</a></li>
-                      <li class="menu-text-size style1 mylinks font-weight-bold my-2"><a href="landingpages.html" 
-                        data-text="LandingPages">LandingPages</a></li>
-                      <li class="menu-text-size style1 mylinks font-weight-bold my-2"><a href="CRM.html" 
-                        data-text="CRM">CRM</a></li>
-                      <li class="menu-text-size style1 mylinks font-weight-bold my-2"><a href="telemarket.html" data-text="TeleMarket">TeleMarket</a></li>
-                  </ul>
-                  </div>
-                </div>
-                   
-                </div>
-                <div class="col-md-5 text-center m-auto order-md-2 order-1 mt-2 d-none d-md-block">
-                    <img src="assets/img/logo.png" class="img-fluid d-none d-md-block" alt="">
-                    <img src="assets/img/centered.png" style="height: 170px; margin: auto;" class="img-fluid d-block d-md-none" alt="">
-                </div>
-             
-            </div>
+    <nav class="header-nav" id="headerNav">
+       <div class="circles-wrapper">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+      </div>
+      <div class="nav-top">
+        <div class="nav-top_logo">
+          <img src="./images/white-new-logo.png" alt="">
         </div>
+        <div class="close-menu" onclick="closeNav()">
+          <img src="./images/close-nav.svg" alt="">
+        </div>
+      </div>
+      <div class="nav-wrap_menu-list">
+          <li>
+            <a href="#">
+              <span class="menu-list-img">
+                <img src="./images/menu-list.svg" alt="">
+              </span> 
+              <span>HOME</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="menu-list-img">
+                <img src="./images/menu-list.svg" alt="">
+              </span>
+              <span>ABOUT</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="menu-list-img">
+                <img src="./images/menu-list.svg" alt="">
+              </span>
+              <span>SERVICES</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="menu-list-img">
+                <img src="./images/menu-list.svg" alt="">
+              </span>
+              <span>CASE STUDIES</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="menu-list-img">
+                <img src="./images/menu-list.svg" alt="">
+              </span>
+              <span>CONTACT</span>
+            </a>
+          </li>
+      </div> 
     </nav>
   </header> 
-<!-- ================ Header  Video ========================= -->
-
-<!-- 
-<div class="video-background">
-  <div class="video-header-content">
-    <div class="col-md-8 m-auto heading text-center ">
-      <span>👋 Yes ! We Take Responsibility.</span>
-      <h1 class="mt-4 display-1 heading">"<span class="text-success">Hyper-Growth</span>" to Your Business in <br>
-        <span class="text-success"> 90 days </span>or Less </h1>
-        <div class="col-md-5 m-auto mt-4">
-          <form action="" class="form-group">
-            <input type="text" class="form-control" placeholder="enter your email and let's get started !">
-          </form>
-        </div>
-    </div>
-    
-  </div>
-  <video src="images/hero-video.mp4" loop autoplay  >
-    <source  src="images/hero-video.mp4" type="video/mp4">
-    <source src="images/hero-video.mp4" type="video/ogg">
-  </video>
-</div> -->
 
 
 <!-- ============== Header Section =========== -->
 
 
-  <section class="custom-container-fluid ">
+<section class="custom-container-fluid header-section text-white">
+  <div class="col-md-9 col-10  mx-auto text-center text-white">
+    <h2 class="text-white display-4">Growing Business Onine Is Hard.</span> </h2>
+    <p class="heading display-3">We make it 3X <br> <span class="display-4 text-success heading"> Simple. Stronger. Smarter. </span>  </p>
+    <h1>💸 </h1>
+    <input type="text" class="form-control" placeholder="Enter Website to plan your business growth for next 90 days.">
+    <button class="btn-primary btn mt-4">Let's See Your Growth </button>
+</div>
+  <!-- <div class="row justify-content-between">
+    <div class="col-md-5 mt-3">
+      <span>👋 Yes ! We Take Responsibility.</span>
+      <h1 class="mt-4 heading ">A  "<span class="text-success">Hyper-Growth</span>" to Your Business in <br>
+      <span class="text-success"> 90 days </span>or Less. </h1>
+      <input type="text" class="form-control" placeholder="Enter Website to plan your business growth for next 90 days.">
+      <button class="btn-primary btn mt-4">Let's See Your Growth </button>
+    </div>
+
+    <div class="col-md-5 mt-3">
+      <img src="images/client1.png" class="img-fluid" loading="lazy" alt="">
+    </div>
+  </div> -->
+</section>  
+
+
+
+  <!-- <section class="custom-container-fluid bg-dark text-white">
     <div class="col-md-9 col-11 m-auto heading text-center ">
       <span>👋 Yes ! We Take Responsibility.</span>
       <h1 class="mt-4 heading display-3">A  "<span class="text-success">Hyper-Growth</span>" to Your Business in <br>
@@ -106,16 +127,16 @@
         <button class="btn-primary btn mt-4">Let's See Your Growth </button>
       </div>
     </div>
-  </section>  
+  </section>   -->
 
 
-  <section class="custom-container-fluid bg-dark">
+  <!-- <section class="custom-container-fluid bg-dark bg-image-overlay">
     <div class="col-md-9 col-10  mx-auto text-center text-white">
           <h2 class=" text-white display-4">Growing Business Onine Is Hard.</span> </h2>
           <p class="heading display-3">We make it 3X <br> <span class="display-4 text-success heading"> Simple. Stronger. Smarter. </span>  </p>
           <h1>💸 </h1>
     </div>
-  </section>
+  </section> -->
   
 
   <section class="custom-container-fluid ">
@@ -257,17 +278,13 @@
             </div>
           </div>
 
-         
-
          </div>
       </div>
    </div>
+</section>
 
-    </section>
 
-   
 
-<!-- 
 <section class="custom-container-fluid ">
   <div class="col-md-9 col-10 mx-auto">
     <p>We are Result-Oriented  </p>
@@ -276,12 +293,12 @@
     <p class="mt-3">We Intensively listen to our clients Goals and Complete a free audit to discover if we’re a great fit to work with each other.</p>
     <button class="btn btn-primary">Let's See If We Are A Good Fit </button>
   </div>
-</section> -->
+</section>
 
 
 
-  <section class="custom-container-fluid text-hover-images ">
-    <div class="text heading" data-src="images/team.jpg">
+  <!-- <section class="custom-container-fluid text-hover-images "> -->
+    <!-- <div class="text heading" data-src="images/team.jpg">
       <h1>AGENCY</h1>
       <p>Relax and let us take all the burdon.</p>
     </div>
@@ -305,10 +322,12 @@
       <h1>Facebook Ads</h1>
       <p>Let us Take all the Burden.</p>
     </div>
-    <img src="images/img-1.jpg" class="hover-img" loading="lazy" alt="">
-</section>
+    <img src="images/img-1.jpg" class="hover-img" loading="lazy" alt=""> -->
+<!-- </section> -->
 
-  <section>
+
+
+  <!-- <section>
   <div class="custom-container-fluid my-5 ">
     <div class="col-md-9 col-10 m-auto   ">
       <h2 class=" display-4" style="font-weight: 400;">Timing  <span class="text-success fw-bold heading"> Matters</span></h2>
@@ -322,11 +341,10 @@
       <button class="btn btn-primary">See how much you can grow in next 3 months ! </button>
     </div>
   </div>
-  </section>
+  </section> -->
 
 
-
-  <section class="custom-container-fluid mt-5 bg-dark py-5">
+  <section class="custom-container-fluid mt-5 bg-blue py-5">
        <div class="col-md-9 col-10 mx-auto text-center text-white pt-4">
         <h2 class=" display-4 text-white" style="font-weight: 400;">Choose Your <strong>6-7</strong> Figure <br><span class="text-success fw-bold heading"> Digital Success Path</span></h2>
         <p class="text-white">Stop feeling frustrated by digital marketing and start out-performing your competition instead. <br>
@@ -513,23 +531,27 @@
 
 </body>
 </html>
+
+
 <script>
-  let container = document.querySelector('.text-hover-images');
-      let img = container.querySelector('.hover-img');
-        document.body.onmousemove = (e) =>{
-          let x = e.pageX;
-          let y = e.pageY;
-          img.style.top = y + 'px';
-          img.style.left = x + 'px';
-        }
+  // let container = document.querySelector('.text-hover-images');
+  //     let img = container.querySelector('.hover-img');
+  //       document.body.onmousemove = (e) =>{
+  //         let x = e.pageX;
+  //         let y = e.pageY;
+  //         img.style.top = y + 'px';
+  //         img.style.left = x + 'px';
+  //       }
         
-        container.querySelectorAll('.text').forEach(text =>{
-          text.onmousemove = () =>{
-            console.log("img.src : ", img.src)
-            img.src = text.getAttribute('data-src');
-          }
-        });
-              $('.section-slider-wrapper').owlCarousel({
+  //       container.querySelectorAll('.text').forEach(text =>{
+  //         text.onmousemove = () =>{
+  //           console.log("img.src : ", img.src)
+  //           img.src = text.getAttribute('data-src');
+  //         }
+  //       });
+
+
+      $('.section-slider-wrapper').owlCarousel({
         items:3.5,
         loop:true,
         margin:30,
@@ -569,4 +591,4 @@
               }
           })
 
-</script>
+</script> 
